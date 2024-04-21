@@ -17,6 +17,7 @@ Link of the project: https://book-stock-registry.onrender.com
 
 # Page for editing book data 
 
-![image](https://github.com/nathan-nigussie/Book-Stock-Registry-/assets/91279474/6361bee6-db66-4ea2-9359-c6ef2d0f2d55)
+![image](https://github.com/nathan-nigussie/Book-Stock-Registry-/assets/91279474/1889a293-b929-4b4b-b749-ca91a372bc67)
+
 
 
