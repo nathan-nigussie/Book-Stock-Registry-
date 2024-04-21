@@ -1,0 +1,64 @@
+<!-- include header -->
+<%- include("layout/header")%>
+    <!-- /include header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto mt-5">
+                            <div class="card shadow">
+                                <div class="card-header bg-success">
+                                    <h5 class="text-light">Edit Book Information:[<%= book.title %>]
+                                    </h5>
+                                </div>
+                                <div class="card-body p-4">
+                                    <form action="/update/<%= book._id %>" method="post" id="add-form"
+                                        enctype="multipart/form-data">
+                                        <div class="mb-3">
+                                            <label for="title">Title</label>
+                                            <input type="text" name="title" class="form-control form-control-lg"
+                                                placeholder="Enter Title of the Book" value="<%= book.title %>" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="genre">Genre</label>
+                                            <input type="text" name="genre" class="form-control form-control-lg"
+                                                placeholder="Enter Genre of the Book" value="<%= book.genre %>" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description">Description</label>
+                                            <input type="text" name="description" class="form-control form-control-lg"
+                                                placeholder="Enter Short Intro of the book.."
+                                                value="<%= book.description %>" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description">Publication Year</label>
+                                            <input type="date" name="publicationYear"
+                                                class="form-control form-control-lg" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="image" class="form-label">Select Image</label>
+                                            <input type="file" name="image" class="form-control form-control-lg" />
+                                            <img src="/<%= book.image %>" width="80" class="img-thumbnail mt-1" />
+                                        </div>
+                                        <input type="hidden" name="old_image" width="80"
+                                            class="form-control form-control-lg" value="<%= book.image %>" />
+                                        <div class="mb-3">
+                                            <input type="submit" name="submit" value="update Book"
+                                                class="btn btn-success btn-lg" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- include footer -->
+    <%- include("layout/footer")%>
+        <!-- /include footer-->

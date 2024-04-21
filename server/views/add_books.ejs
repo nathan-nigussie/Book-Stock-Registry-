@@ -1,0 +1,59 @@
+<!-- include header -->
+<%- include("layout/header")%>
+    <!-- /include header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto mt-5">
+                            <div class="card shadow">
+                                <div class="card-header bg-secondary">
+                                    <h5 class="text-light">Add New Book</h5>
+                                </div>
+                                <div class="card-body p-4">
+                                    <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+                                        <div class="mb-3">
+                                            <label for="title">Title</label>
+                                            <input type="text" name="title" class="form-control form-control-lg"
+                                                placeholder="Enter Title of the Book" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="genre">Genre</label>
+                                            <input type="text" name="genre" class="form-control form-control-lg"
+                                                placeholder="Enter Genre of the Book" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description">Description</label>
+                                            <input type="text" name="description" class="form-control form-control-lg"
+                                                placeholder="Enter Short Intro of the book.." />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description">Publication Year</label>
+                                            <input type="date" name="publicationYear"
+                                                class="form-control form-control-lg" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="image" class="form-label">Select Image</label>
+                                            <input type="file" name="image" class="form-control form-control-lg"
+                                                required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="submit" name="submit" value="Add Book"
+                                                class="btn btn-success btn-lg" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- include footer -->
+    <%- include("layout/footer")%>
+        <!-- /include footer-->
