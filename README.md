@@ -9,7 +9,8 @@ Database: Mongo DB is used as data storage for books, cover images, etc. Mongoos
 Link of the project: https://book-stock-registry.onrender.com
 
 # Home page
-![image](https://github.com/nathan-nigussie/Book-Stock-Registry-/assets/91279474/af60ed62-36c7-47f5-8629-759026c621ed)
+![image](https://github.com/nathan-nigussie/Book-Stock-Registry-/assets/91279474/f3ce98ae-38e6-4240-83c2-3a077d6e8536)
+
 
 # Add new record
 ![image](https://github.com/nathan-nigussie/Book-Stock-Registry-/assets/91279474/7e279a1f-142e-4456-9d7e-25535dfd9ff3)
