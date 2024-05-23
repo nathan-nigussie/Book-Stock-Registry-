@@ -1,5 +1,5 @@
 ## Addis Book Store
-This application is a bookstore registration application. It consists of the following components.
+This application is a bookstore stock registration application. It consists of the following components.
 
 Front-end store: Web UI built with HTML5 and JS. The application allows users to enter book information, including image files, and edit the entered information as needed.
 The EJS template engine is used to specify where various book data should be appended to the HTML page.
